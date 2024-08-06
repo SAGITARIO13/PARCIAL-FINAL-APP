@@ -30,3 +30,21 @@
   text-align: center;
   margin-top: 40%;
 }
+
+.custom-card {
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+}
+
+.custom-card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #007acc;
+}
+
+.custom-card-content {
+  font-size: 1.2em;
+  color: #333;
+}

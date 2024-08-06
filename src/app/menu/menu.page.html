@@ -1,131 +1,111 @@
 <ion-content>
-    <!--PARA CREAR OTRA LINEA DE BOTONES SOLO COPIAR Y PEGAR ESTA-->
-
+  <ion-grid>
+    <!--PRIMERA FILA DE BOTONES-->
     <ion-row>
       <ion-col size="6">
-        <ion-button href="/history">
-          <div>
-            <ion-icon size="large" name="hourglass-outline"></ion-icon><br>
-            Historia
-          </div>
+        <ion-button class="custom-button" href="/history" expand="block">
+          <ion-icon slot="start" size="large" name="time-outline"></ion-icon>
+          Historia
         </ion-button>
       </ion-col>
       <ion-col size="6">
-        <ion-button href="/tabs/services">
-          <div>
-            <ion-icon size="large" name="file-tray-stacked-outline"></ion-icon><br>
-            <ion-label>Servicios</ion-label>
-          </div>
+        <ion-button class="custom-button" href="/tabs/services" expand="block">
+          <ion-icon slot="start" size="large" name="briefcase-outline"></ion-icon>
+          Servicios
         </ion-button>
       </ion-col>
     </ion-row>
 
+    <!--SEGUNDA FILA DE BOTONES-->
     <ion-row>
       <ion-col size="6">
-        <ion-button href="/tabs/news">
-          <div>
-            <ion-icon size="large" name="newspaper-outline"></ion-icon><br>
-            Noticias
-          </div>
+        <ion-button class="custom-button" href="/tabs/news" expand="block">
+          <ion-icon slot="start" size="large" name="newspaper-outline"></ion-icon>
+          Noticias
         </ion-button>
       </ion-col>
       <ion-col size="6">
-        <ion-button href="/tabs/videos">
-          <div>
-            <ion-icon size="large" name="play-outline"></ion-icon><br>
-            Videos
-          </div>
+        <ion-button class="custom-button" href="/tabs/videos" expand="block">
+          <ion-icon slot="start" size="large" name="videocam-outline"></ion-icon>
+          Videos
         </ion-button>
       </ion-col>
     </ion-row>
 
+    <!--TERCERA FILA DE BOTONES-->
     <ion-row>
       <ion-col size="6">
-        <ion-button href="/tabs/albergues">
-          <div>
-            <ion-icon size="large" name="home-outline"></ion-icon><br>
-            <ion-label>Albergues</ion-label>
-          </div>
+        <ion-button class="custom-button" href="/tabs/albergues" expand="block">
+          <ion-icon slot="start" size="large" name="home-outline"></ion-icon>
+          Albergues
         </ion-button>
       </ion-col>
       <ion-col size="6">
-        <ion-button href="/tabs/alberguesMap">
-          <div>
-            <ion-icon size="large" name="map-outline"></ion-icon><br>
-            Mapa
-          </div>
+        <ion-button class="custom-button" href="/tabs/alberguesMap" expand="block">
+          <ion-icon slot="start" size="large" name="map-outline"></ion-icon>
+          Mapa
         </ion-button>
       </ion-col>
     </ion-row>
 
+    <!--CUARTA FILA DE BOTONES-->
     <ion-row>
       <ion-col size="6">
-        <ion-button href="/tabs/medidas">
-          <div>
-            <ion-icon size="large" name="body-outline"></ion-icon><br>
-            Medidas
-          </div>
+        <ion-button class="custom-button" href="/tabs/medidas" expand="block">
+          <ion-icon slot="start" size="large" name="body-outline"></ion-icon>
+          Medidas
         </ion-button>
       </ion-col>
       <ion-col size="6">
-        <ion-button href="/tabs/members">
-          <div>
-            <ion-icon size="large" name="people-outline"></ion-icon><br>
-            <ion-label>Miembros</ion-label>
-          </div>
+        <ion-button class="custom-button" href="/tabs/members" expand="block">
+          <ion-icon slot="start" size="large" name="people-outline"></ion-icon>
+          Miembros
         </ion-button>
       </ion-col>
     </ion-row>
 
+    <!--QUINTA FILA DE BOTONES-->
     <ion-row>
       <ion-col size="6">
-        <ion-button href="/tabs/form">
-          <div>
-            <ion-icon size="large" name="clipboard-outline"></ion-icon><br>
-            Formulario
-          </div>
+        <ion-button class="custom-button" href="/tabs/form" expand="block">
+          <ion-icon slot="start" size="large" name="clipboard-outline"></ion-icon>
+          Formulario
         </ion-button>
       </ion-col>
 
-    <!--Funcionalidades post-login-->
+      <!--Funcionalidades post-login-->
       <ion-col *ngIf="hastoken" size="6">
-        <ion-button href="/tabs/noticiasEsp">
-          <div>
-            <ion-icon size="large" name="newspaper-outline"></ion-icon><br>
-            <ion-label>Noticias Especificas</ion-label>
-          </div>
+        <ion-button class="custom-button" href="/tabs/noticiasEsp" expand="block">
+          <ion-icon slot="start" size="large" name="newspaper-outline"></ion-icon>
+          Noticias Específicas
         </ion-button>
       </ion-col>
     </ion-row>
 
-
+    <!--SEXTA FILA DE BOTONES-->
     <ion-row>
       <ion-col *ngIf="hastoken" size="6">
-        <ion-button href="/tabs/reportarSituacion">
-          <div>
-            <ion-icon size="large" name="calendar-outline"></ion-icon><br>
-            <ion-label>Reportar Situaciones </ion-label>
-          </div>
+        <ion-button class="custom-button" href="/tabs/reportarSituacion" expand="block">
+          <ion-icon slot="start" size="large" name="alert-outline"></ion-icon>
+          Reportar Situaciones
         </ion-button>
       </ion-col>
       <ion-col *ngIf="hastoken" size="6">
-        <ion-button href="/tabs/MiSituaciones">
-          <div>
-            <ion-icon size="large" name="navigate-outline"></ion-icon><br>
-            <ion-label>Mis Situaciones</ion-label>
-          </div>
+        <ion-button class="custom-button" href="/tabs/MiSituaciones" expand="block">
+          <ion-icon slot="start" size="large" name="list-outline"></ion-icon>
+          Mis Situaciones
         </ion-button>
       </ion-col>
     </ion-row>
 
+    <!--SEPTIMA FILA DE BOTONES-->
     <ion-row>
       <ion-col *ngIf="hastoken" size="6">
-        <ion-button href="/tabs/MapaSituaciones">
-          <div>
-            <ion-icon size="large" name="map-outline"></ion-icon><br>
-            <ion-label>Mapa de Situaciones</ion-label>
-          </div>
+        <ion-button class="custom-button" href="/tabs/MapaSituaciones" expand="block">
+          <ion-icon slot="start" size="large" name="locate-outline"></ion-icon>
+          Mapa de Situaciones
         </ion-button>
       </ion-col>
     </ion-row>
+  </ion-grid>
 </ion-content>
