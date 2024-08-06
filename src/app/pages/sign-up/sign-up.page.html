@@ -1,0 +1,48 @@
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-title class="title">Bienvenido/a!</ion-title>
+    <ion-img src="assets/prevencion_desastres.png"></ion-img>
+    <p class="subTitle">Ingresa tus datos para crear tu cuenta!</p>
+  </div>
+
+  <form>
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input placeholder="Cedula" class="input" name="cedula" [(ngModel)]="cedula"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Nombre" class="input" name="nombre" [(ngModel)]="nombre"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Apellido" class="input" name="apellido" [(ngModel)]="apellido"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Correo" class="input" name="correo" [(ngModel)]="correo"></ion-input>
+        <ion-icon name="mail-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Contraseña" type="password" class="input" name="clave" [(ngModel)]="clave"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="telefono" class="input" name="telefono" [(ngModel)]="telefono"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="Clickear()">Registrar</ion-button>
+      </ion-item>
+      <div class="signinLink">
+        <p>¿Ya eres miembro? <a style="color:#FFC33F" [routerLink]="['/login']">Inicia sesión!</a></p>
+      </div>
+    </div>
+  </form>
+
+  <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 30px;">
+    <ion-fab-button [routerLink]="['/home']">
+      <ion-icon name="chevron-forward"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

@@ -1,0 +1,36 @@
+
+ion-content{
+    padding-top: 25px !important;
+}
+ion-row{
+    height: max-content;
+
+    ion-button {
+        border-radius: 10px;
+        height: 100px;
+        width: 100%;
+        --background: transparent;
+
+        --border-radius: 8px;
+        --border-style: solid;
+        --border-width: 0.3px;
+        --box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+        font-size: 0.75rem;
+
+    }
+}
+
+ion-toolbar ion-button {
+    margin-start: 8px; 
+    --padding-start: 6px; 
+    --padding-end: 6px; 
+    --border-radius: 0;
+    --background: transparent;
+    --color: var(--ion-color-primary);
+    --box-shadow: none;
+  }
+  
+  ion-toolbar ion-button:active {
+    --opacity: 0.8;
+  }
